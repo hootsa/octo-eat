@@ -1,0 +1,22 @@
+.header-style {
+  background-color: white;
+  height: 150px;
+}
+.content-style {
+  background-color: white;
+  padding: 50px 40px;
+}
+.footer-style {
+  background-color: white;
+  text-align: center;
+}
+.logo-img {
+  width: 108px;
+}
+.logo-name {
+  margin: auto;
+  font-size: 32px;
+}
+.search-style {
+  margin-bottom: 50px;
+}
