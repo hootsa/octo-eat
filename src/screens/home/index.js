@@ -13,7 +13,7 @@ const DefaultSelectedUsersFilter = {
   cuisineType: ["American"],
 };
 
-export default function Layouts() {
+export default function Home() {
   const [selectedFilters, setSelectedFilters] = useState(
     DefaultSelectedUsersFilter
   );

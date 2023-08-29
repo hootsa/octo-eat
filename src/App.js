@@ -1,10 +1,10 @@
 import "./App.css";
-import Layouts from "./screens/home";
+import Home from "./screens/home";
 
 function App() {
   return (
     <div className="App">
-      <Layouts />
+      <Home />
     </div>
   );
 }

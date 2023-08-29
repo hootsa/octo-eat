@@ -38,38 +38,10 @@ code implementation:
 - Update: listen to users action and update data
 
 */
-// const [isChecked, setIsChecked] = useState(false);
-
-// const onChange = (event) => {
-//   setIsChecked(event.target.checked);
-//   if()
-// };
 
 const log = (e) => {
   console.log(e);
 };
-const dietItems = [
-  {
-    key: "low-fat",
-    label: <Checkbox onChange={onChange}>Low-Fat</Checkbox>,
-  },
-  {
-    key: "balanced",
-    label: <Checkbox onChange={onChange}>Balanced</Checkbox>,
-  },
-  {
-    key: "high-protein",
-    label: <Checkbox onChange={onChange}>High-Protein</Checkbox>,
-  },
-  {
-    key: "low-carb",
-    label: <Checkbox onChange={onChange}>Low-Carb</Checkbox>,
-  },
-  {
-    key: "high-fiber",
-    label: <Checkbox onChange={onChange}>High-Fiber</Checkbox>,
-  },
-];
 
 const healthItems = [
   {
@@ -118,6 +90,34 @@ const cuisineTypeItems = [
 ];
 
 const Filter = () => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  const onChange = (event) => {
+    setIsChecked(event.target.checked);
+  };
+
+  const dietItems = [
+    {
+      key: "low-fat",
+      label: <Checkbox onChange={onChange}>Low-Fat</Checkbox>,
+    },
+    {
+      key: "balanced",
+      label: <Checkbox onChange={onChange}>Balanced</Checkbox>,
+    },
+    {
+      key: "high-protein",
+      label: <Checkbox onChange={onChange}>High-Protein</Checkbox>,
+    },
+    {
+      key: "low-carb",
+      label: <Checkbox onChange={onChange}>Low-Carb</Checkbox>,
+    },
+    {
+      key: "high-fiber",
+      label: <Checkbox onChange={onChange}>High-Fiber</Checkbox>,
+    },
+  ];
   return (
     <>
       <div className="filter-style">

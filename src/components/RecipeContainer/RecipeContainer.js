@@ -9,7 +9,7 @@ const RecipeContainer = (props) => {
       <Row gutter={[16, 16]}>
         {props.foodData.map((meal) => {
           return (
-            <Col md={6} xs={8}>
+            <Col md={6} xs={8} key={meal.recipe.label}>
               <Card meal={meal} />
             </Col>
           );
